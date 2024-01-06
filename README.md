@@ -1,4 +1,7 @@
 # API Articles
+
+Small API using Prisma and Docker, which makes complete article crud.
+
 ---
 
 ### Project installation:
@@ -46,6 +49,70 @@
   ```
 
   To only upload the database when it is running in development and wants to test.
+
+---
+
+### Rota para que mostra em que está rodando:
+
+  ```http
+    GET http://localhost:3000/
+  ```
+
+---
+
+### Path to access documentation:
+
+  ```http
+    GET http://localhost:3000/api-doc
+  ```
+
+---
+
+### Path to view articles:
+
+  ```http
+    GET http://localhost:3000/articles
+  ```
+
+---
+
+### Path to register articles:
+
+  ```http
+    POST http://localhost:3000/articles
+  ```
+
+---
+
+### Path to see unpublished articles:
+
+  ```http
+    http://localhost:3000/articles/drafts
+  ```
+
+---
+
+### Path to search for article by ID:
+
+  ```http
+    GET http://localhost:3000/articles/{id}
+  ```
+
+---
+
+### Path to update article:
+
+  ```http
+    PATCH http://localhost:3000/articles/{id}
+  ```
+
+---
+
+### Path to delete article:
+
+  ```http
+    DELETE http://localhost:3000/articles/{id}
+  ```
 
 ---
 
